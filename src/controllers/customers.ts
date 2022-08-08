@@ -1,6 +1,8 @@
 import * as mongoose from 'mongoose';
 import { CustomerSchema } from '../models/customers';
 import { Request, Response } from 'express';
+const url = require('url');
+const querystring = require('querystring');
 
 const Customer = mongoose.model('Customer', CustomerSchema);
 
@@ -17,7 +19,8 @@ export class CustomerController {
     }
 
     public getCustomers (req: Request, res: Response) {
-        Customer.find({}, (err, customer) => {
+        let parseQuery = querystring.parse(url.parse(req.url).query);
+        Customer.find(parseQuery, (err, customer) => {
             if(err){
                 res.send(err);
             }
@@ -51,6 +54,5 @@ export class CustomerController {
             res.json({ message: 'Successfully deleted customer!'});
         });
     }
-    
 } 
 
