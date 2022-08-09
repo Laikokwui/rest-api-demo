@@ -1,5 +1,5 @@
-# rest-api-demo-METN
-Node JS, MongoDB, TypeScript, Express JS
+# rest-api-demo
+Node JS, MongoDB, TypeScript, Express JS, Mongoose
 
 ## RestApi Test using Postman
 
@@ -21,3 +21,7 @@ Node JS, MongoDB, TypeScript, Express JS
 <img width="1253" alt="image" src="https://user-images.githubusercontent.com/47911209/183548891-94dd8953-ff90-4fe8-bdb5-a01e78a0926e.png">
 
 <img width="1252" alt="image" src="https://user-images.githubusercontent.com/47911209/183548940-6a2535b8-0197-4230-94c3-4ed90506715d.png">
+
+## MongoDB Check
+
+<img width="694" alt="image" src="https://user-images.githubusercontent.com/47911209/183549160-82b6947c-eff2-456e-9b87-46ff81547650.png">
